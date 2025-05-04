@@ -11,4 +11,4 @@ app.get('/courses', function (req, res) {
 
 app.listen(4000, () => {
   console.log("Started server");
-});
+})
