@@ -9,7 +9,7 @@ app.get('/courses', function (req, res) {
   res.send('Print all courses')
 })
 
-app.listen(3000, ()=>{
+app.listen(4000, ()=>{
     console.log("Started server");
 }
 )
