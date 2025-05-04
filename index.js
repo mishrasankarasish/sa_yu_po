@@ -1,14 +1,18 @@
 const express = require('express');
 const app = express();
 
-app.get('/', function (req, res) {
+app.get('/', (req, res) => {
   res.send('Hello MCKV');
 });
 
-app.get('/courses', function (req, res) {
-  res.send('Print all courses');
+app.get('/courses', (req, res) => {
+  res.json([
+    { id: 1, name: 'Mathematics' },
+    { id: 2, name: 'Computer Science' },
+    { id: 3, name: 'Electronics' }
+  ]);
 });
 
 app.listen(4000, () => {
-  console.log("Started server");
-})
+  console.log("Server started on port 4000");
+});
